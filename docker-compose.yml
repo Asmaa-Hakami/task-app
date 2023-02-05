@@ -1,0 +1,9 @@
+version: "3"
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: nestjs-app/Dockerfile
+    image: nest-cloud
+    ports:
+      - "3000:3000"
